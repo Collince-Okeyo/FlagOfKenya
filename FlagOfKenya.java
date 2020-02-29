@@ -1,6 +1,4 @@
-import javax.swing.JFrame;
-import javax.swing.JButton;
-import javax.swing.JPanel;
+import javax.swing.*;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.FlowLayout;
@@ -21,7 +19,7 @@ public class FlagOfKenya extends JFrame implements ActionListener
 	
 	public FlagOfKenya()
 	{
-		super("I Love Kenya");
+		super("I Love Kenya, its my pride");
 		setSize(WIDTH,HEIGHT);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(new BorderLayout());
@@ -83,16 +81,16 @@ public class FlagOfKenya extends JFrame implements ActionListener
 	{
 		String buttonStr=e.getActionCommand();
 		
-		if(buttonStr.equals("Red"))
-			redPanel.setBackground(Color.RED);
-		else if(buttonStr.equals("white"))
-			whitePanel.setBackground(Color.WHITE);
-		else if(buttonStr.equals("Green"))
-			greenPanel.setBackground(Color.GREEN);
-		else if(buttonStr.equals("Black"))
-			blackPanel.setBackground(Color.BLACK);
+		if(buttonStr.equals("Red")){
+			redPanel.setBackground(Color.RED);}
+		else if{(buttonStr.equals("white"))
+			whitePanel.setBackground(Color.WHITE);}
+		else if{(buttonStr.equals("Green"))
+			greenPanel.setBackground(Color.GREEN);}
+		else if{(buttonStr.equals("Black"))
+			blackPanel.setBackground(Color.BLACK);}
 		else
-			System.out.println("Unexpected  error");
+			System.out.println("An Error Occurred");
 	}
 	
 		public static void main(String[] args)
